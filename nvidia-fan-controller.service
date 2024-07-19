@@ -1,0 +1,8 @@
+[Unit]
+Description=nvidia-fan-controller
+
+[Service]
+ExecStart=$HOME/.local/share/nvidia-fan-controller/nvidia-fan-controller.sh
+
+[Install]
+WantedBy=multi-user.target
