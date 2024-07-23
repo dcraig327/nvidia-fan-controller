@@ -60,7 +60,8 @@ systemctl --user start nvidia-fan-controller
 ```
 watch systemctl --user status nvidia-fan-controller
 ```
-12) Uninstallation
+
+*) Uninstallation
 ```
 systemctl --user stop nvidia-fan-controller
 systemctl --user disable nvidia-fan-controller
