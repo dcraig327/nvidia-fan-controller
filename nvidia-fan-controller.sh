@@ -3,10 +3,12 @@
 min_fan_value="40"
 max_fan_value="80"
 delay="5"
+startup_delay="120"
 
+sleep "$startup_delay"
 nvidia-settings -a "GPUFanControlState=1"
-while true
-do
+
+while true; do
     temp=`nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader | tail -n 1`
 
     fan="$temp"
